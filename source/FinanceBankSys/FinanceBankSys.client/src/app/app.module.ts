@@ -57,6 +57,18 @@ import { UserPreferencesComponent } from './components/controls/user-preferences
 import { UsersManagementComponent } from './components/controls/users-management.component';
 import { RolesManagementComponent } from './components/controls/roles-management.component';
 import { RoleEditorComponent } from './components/controls/role-editor.component';
+import { AccountRegisterComponent } from './components/accounts/account-register/account-register.component';
+import { AccountEditComponent } from './components/accounts/account-edit/account-edit.component';
+import { ResetPasswordComponent } from './components/authentication/reset-password/reset-password.component';
+import { RegisterUserComponent } from './components/authentication/register-user/register-user.component';
+import { ConfirmRegisterComponent } from './components/authentication/confirm-register/confirm-register.component';
+import { CreateuserprofileComponent } from './components/authentication/userprofile/createuserprofile/createuserprofile.component';
+import { ManageprofilesComponent } from './components/authentication/userprofile/manageprofiles/manageprofiles.component';
+import { RequireextractbyperiodmonthlyComponent } from './components/extracts/requireextractbyperiodmonthly/requireextractbyperiodmonthly.component';
+import { RequireextractbydayComponent } from './components/extracts/requireextractbyday/requireextractbyday.component';
+import { RequireextractbyyearComponent } from './components/extracts/requireextractbyyear/requireextractbyyear.component';
+import { TransferComponent } from './components/operations/transfer/transfer.component';
+import { PaymentSchedullingComponent } from './components/operations/payment-schedulling/payment-schedulling.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +89,19 @@ import { RoleEditorComponent } from './components/controls/role-editor.component
     EqualValidator,
     AutofocusDirective,
     BootstrapTabDirective,
-    GroupByPipe
+    GroupByPipe,
+    AccountRegisterComponent,
+    AccountEditComponent,
+    ResetPasswordComponent,
+    RegisterUserComponent,
+    ConfirmRegisterComponent,
+    CreateuserprofileComponent,
+    ManageprofilesComponent,
+    RequireextractbyperiodmonthlyComponent,
+    RequireextractbydayComponent,
+    RequireextractbyyearComponent,
+    TransferComponent,
+    PaymentSchedullingComponent
   ],
   imports: [
     BrowserModule,
