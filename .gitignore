@@ -1,0 +1,123 @@
+## .gitignore for a .NET 8 and Angular Project
+
+# ============ #
+# .NET ignores #
+# ============ #
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Roslyn cache directories
+*.ide/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Coverlet coverage reports
+coverage*.json
+coverage*.xml
+coverage*.info
+
+# VSTest results directory
+TestResults/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Uno Platform
+Uno.UI/Uno.UI.RemoteControl/
+Uno.UI/Uno.UI.RemoteControl.Client/
+*.rd.xml
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+*.sln.docstates
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.dll.config
+*.pfx
+*.snk
+
+# Mono auto generated files
+mono_crash.*
+
+# ============== #
+# Angular ignores #
+# ============== #
+
+# dependencies
+/node_modules
+/package-lock.json
+/yarn.lock
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# logs
+/logs
+*.log
+
+# IDEs and editors
+/.idea
+/.vscode
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# Only if you are placing 'env' files in the project
+#*.env
+#*.env.local
+#*.env.development.local
+#*.env.test.local
+#*.env.production.local
+
+# Angular ngcc compiler output
+/__ngcc_lock_file__
+
+# Angular-specific files
+.angular/cache/
