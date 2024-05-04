@@ -57,6 +57,8 @@ import { UserPreferencesComponent } from './components/controls/user-preferences
 import { UsersManagementComponent } from './components/controls/users-management.component';
 import { RolesManagementComponent } from './components/controls/roles-management.component';
 import { RoleEditorComponent } from './components/controls/role-editor.component';
+import { AccountRegisterComponent } from './components/accounts/account-register/account-register.component';
+import { AccountEditComponent } from './components/accounts/account-edit/account-edit.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +79,9 @@ import { RoleEditorComponent } from './components/controls/role-editor.component
     EqualValidator,
     AutofocusDirective,
     BootstrapTabDirective,
-    GroupByPipe
+    GroupByPipe,
+    AccountRegisterComponent,
+    AccountEditComponent
   ],
   imports: [
     BrowserModule,
