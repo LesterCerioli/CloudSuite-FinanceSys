@@ -69,6 +69,7 @@ import { RequireextractbydayComponent } from './components/extracts/requireextra
 import { RequireextractbyyearComponent } from './components/extracts/requireextractbyyear/requireextractbyyear.component';
 import { TransferComponent } from './components/operations/transfer/transfer.component';
 import { PaymentSchedullingComponent } from './components/operations/payment-schedulling/payment-schedulling.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -137,7 +138,8 @@ import { PaymentSchedullingComponent } from './components/operations/payment-sch
     AccountService,
     AccountEndpoint,
     LocalStoreManager,
-    OidcHelperService
+    OidcHelperService,
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
