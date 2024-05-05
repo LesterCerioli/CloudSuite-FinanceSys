@@ -18,6 +18,11 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ToastaModule } from 'ngx-toasta';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgChartsModule } from 'ng2-charts';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppErrorHandler } from './app-error.handler';
@@ -57,20 +62,14 @@ import { UserPreferencesComponent } from './components/controls/user-preferences
 import { UsersManagementComponent } from './components/controls/users-management.component';
 import { RolesManagementComponent } from './components/controls/roles-management.component';
 import { RoleEditorComponent } from './components/controls/role-editor.component';
+import { AccountComponent } from './components/accounts/account/account.component';
 import { AccountRegisterComponent } from './components/accounts/account-register/account-register.component';
-import { AccountEditComponent } from './components/accounts/account-edit/account-edit.component';
-import { ResetPasswordComponent } from './components/authentication/reset-password/reset-password.component';
-import { RegisterUserComponent } from './components/authentication/register-user/register-user.component';
-import { ConfirmRegisterComponent } from './components/authentication/confirm-register/confirm-register.component';
-import { CreateuserprofileComponent } from './components/authentication/userprofile/createuserprofile/createuserprofile.component';
-import { ManageprofilesComponent } from './components/authentication/userprofile/manageprofiles/manageprofiles.component';
-import { RequireextractbyperiodmonthlyComponent } from './components/extracts/requireextractbyperiodmonthly/requireextractbyperiodmonthly.component';
-import { RequireextractbydayComponent } from './components/extracts/requireextractbyday/requireextractbyday.component';
-import { RequireextractbyyearComponent } from './components/extracts/requireextractbyyear/requireextractbyyear.component';
 import { TransferComponent } from './components/operations/transfer/transfer.component';
 import { PaymentSchedullingComponent } from './components/operations/payment-schedulling/payment-schedulling.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { AccountComponent } from './components/accounts/account/account.component';
+import { RequireextractbydayComponent } from './components/extracts/requireextractbyday/requireextractbyday.component';
+import { RequireextractbyperiodmonthlyComponent } from './components/extracts/requireextractbyperiodmonthly/requireextractbyperiodmonthly.component';
+import { RequireextractbyyearComponent } from './components/extracts/requireextractbyyear/requireextractbyyear.component';
+
 
 @NgModule({
   declarations: [
@@ -81,30 +80,30 @@ import { AccountComponent } from './components/accounts/account/account.componen
     ProductsComponent,
     OrdersComponent,
     SettingsComponent,
-    UsersManagementComponent, UserInfoComponent, UserPreferencesComponent,
-    RolesManagementComponent, RoleEditorComponent,
+    UsersManagementComponent,
+    UserInfoComponent,
+    UserPreferencesComponent,
+    RolesManagementComponent,
+    RoleEditorComponent,
     AboutComponent,
     NotFoundComponent,
     NotificationsViewerComponent,
     SearchBoxComponent,
-    StatisticsDemoComponent, TodoDemoComponent, BannerDemoComponent,
+    StatisticsDemoComponent,
+    TodoDemoComponent,
+    BannerDemoComponent,
     EqualValidator,
     AutofocusDirective,
     BootstrapTabDirective,
     GroupByPipe,
+    AccountComponent,
     AccountRegisterComponent,
-    AccountEditComponent,
-    ResetPasswordComponent,
-    RegisterUserComponent,
-    ConfirmRegisterComponent,
-    CreateuserprofileComponent,
-    ManageprofilesComponent,
-    RequireextractbyperiodmonthlyComponent,
-    RequireextractbydayComponent,
-    RequireextractbyyearComponent,
     TransferComponent,
     PaymentSchedullingComponent,
-    AccountComponent
+    RequireextractbydayComponent,
+    RequireextractbyperiodmonthlyComponent,
+    RequireextractbyyearComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -127,7 +126,13 @@ import { AccountComponent } from './components/accounts/account/account.componen
     NgxDatatableModule,
     ToastaModule.forRoot(),
     NgSelectModule,
-    NgChartsModule
+    NgChartsModule,
+    // Correctly place Angular Material modules here
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatButtonModule
   ],
   providers: [
     { provide: ErrorHandler, useClass: AppErrorHandler },
@@ -140,8 +145,7 @@ import { AccountComponent } from './components/accounts/account/account.componen
     AccountService,
     AccountEndpoint,
     LocalStoreManager,
-    OidcHelperService,
-    provideAnimationsAsync()
+    OidcHelperService
   ],
   bootstrap: [AppComponent]
 })
