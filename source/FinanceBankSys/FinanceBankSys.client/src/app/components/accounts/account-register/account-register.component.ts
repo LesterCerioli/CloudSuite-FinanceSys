@@ -18,7 +18,7 @@ export class AccountRegisterComponent {
   constructor(private fb: FormBuilder) {}
 
   buildCivilStatusControls() {
-    const arr = this.civilStatusOptions.map(status => {
+    const arr = this.civilStatusOptions.map(() => {
       return this.fb.control(false);
     });
     return this.fb.array(arr);
