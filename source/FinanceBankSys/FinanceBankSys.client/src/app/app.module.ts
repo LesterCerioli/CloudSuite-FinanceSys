@@ -70,6 +70,7 @@ import { RequireextractbyyearComponent } from './components/extracts/requireextr
 import { TransferComponent } from './components/operations/transfer/transfer.component';
 import { PaymentSchedullingComponent } from './components/operations/payment-schedulling/payment-schedulling.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { AccountComponent } from './components/accounts/account/account.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +103,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     RequireextractbydayComponent,
     RequireextractbyyearComponent,
     TransferComponent,
-    PaymentSchedullingComponent
+    PaymentSchedullingComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
